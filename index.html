@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yahya AZZABI - Élève ingénieur ENIB spécialisé en électronique, systèmes embarqués et traitement du signal. Recherche alternance septembre 2026.">
+    <meta name="author" content="Yahya AZZABI">
+    <meta name="keywords" content="ingénieur, embarqué, STM32, électronique, ENIB, alternance, Brest">
+    <title>Yahya AZZABI — Élève ingénieur · Systèmes embarqués</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ============================================
+         Barre de navigation fixe
+         ============================================ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">YA</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about" class="nav-link">À propos</a></li>
+                <li><a href="#skills" class="nav-link">Compétences</a></li>
+                <li><a href="#education" class="nav-link">Formation</a></li>
+                <li><a href="#experience" class="nav-link">Expériences</a></li>
+                <li><a href="#projects" class="nav-link">Projets</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <!-- Bouton thème clair/sombre -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Changer de thème">
+                    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="4"/>
+                        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+                    </svg>
+                    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+
+                <!-- Burger mobile -->
+                <button class="nav-burger" id="nav-burger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================
+         Section Hero
+         ============================================ -->
+    <section class="hero" id="hero">
+        <!-- Grille de fond inspirée d'un schéma électronique -->
+        <div class="hero-grid" aria-hidden="true"></div>
+
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-status">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Disponible — Alternance · Septembre 2026</span>
+                </div>
+
+                <h1 class="hero-title">
+                    Yahya <span class="accent">AZZABI</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    Élève ingénieur · ENIB
+                </p>
+
+                <p class="hero-tags">
+                    <span>Électronique</span>
+                    <span class="dot">·</span>
+                    <span>Systèmes embarqués</span>
+                    <span class="dot">·</span>
+                    <span>Traitement du signal</span>
+                </p>
+
+                <p class="hero-description">
+                    Je travaille sur des microcontrôleurs STM32, j'écris du C/C++ pour des systèmes
+                    temps réel, et je m'intéresse particulièrement à tout ce qui se trouve à la
+                    frontière entre le matériel et le logiciel. Je suis en première année à l'ENIB
+                    et je cherche un contrat d'apprentissage de 2 ans à partir de septembre 2026.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="CV_Yahya_AZZABI.pdf" download class="btn btn-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7 10 12 15 17 10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        Télécharger le CV
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        Me contacter
+                    </a>
+                </div>
+            </div>
+
+            <!-- Carte décorative : "fiche technique" inspirée d'un datasheet -->
+            <aside class="hero-card" aria-hidden="true">
+                <div class="card-header">
+                    <span class="card-dot dot-red"></span>
+                    <span class="card-dot dot-yellow"></span>
+                    <span class="card-dot dot-green"></span>
+                    <span class="card-filename">profile.h</span>
+                </div>
+                <pre class="card-code"><span class="code-comment">// Profil candidat</span>
+<span class="code-keyword">struct</span> <span class="code-type">Engineer</span> {
+  <span class="code-type">char</span>* name      = <span class="code-string">"Yahya AZZABI"</span>;
+  <span class="code-type">char</span>* school    = <span class="code-string">"ENIB Brest"</span>;
+  <span class="code-type">char</span>* focus     = <span class="code-string">"Embedded"</span>;
+  <span class="code-type">int</span>   age       = <span class="code-num">20</span>;
+  <span class="code-type">bool</span>  available = <span class="code-num">true</span>;
+};</pre>
+                <div class="card-footer">
+                    <span class="signal-line"></span>
+                </div>
+            </aside>
+        </div>
+
+        <a href="#about" class="scroll-indicator" aria-label="Défiler vers la suite">
+            <span></span>
+        </a>
+    </section>
+
+    <!-- ============================================
+         Section À propos
+         ============================================ -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">01</span>
+                <h2 class="section-title">À propos</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        Je m'appelle Yahya, j'ai 20 ans et je suis arrivé à Brest en septembre 2025
+                        pour intégrer l'ENIB après deux années de DUT Génie Électrique à Casablanca.
+                        J'ai été admis au parcours FISEA (formation initiale puis apprentissage) à
+                        l'issue du premier semestre, parmi les onze étudiants sélectionnés sur la promo.
+                    </p>
+                    <p>
+                        Ce qui m'attire dans les systèmes embarqués, c'est ce moment précis où quelques
+                        lignes de code écrites sur un PC se traduisent par une réaction concrète dans
+                        le monde physique : un capteur qui transmet une mesure, un buzzer qui se
+                        déclenche, une LED qui répond à une interruption. C'est cette continuité entre
+                        le logiciel et le matériel — et la rigueur qu'elle impose — qui m'intéresse au
+                        quotidien.
+                    </p>
+                    <p>
+                        Je cherche aujourd'hui un contrat d'apprentissage de 2 ans à partir de
+                        septembre 2026, en électronique, systèmes embarqués ou logiciel embarqué. 
+                        Mon objectif : approfondir mes compétences en environnement industriel,
+                        idéalement sur des projets STM32 ou ARM Cortex, et contribuer concrètement
+                        aux développements d'une équipe.
+                    </p>
+                </div>
+
+                <aside class="about-facts">
+                    <div class="fact">
+                        <div class="fact-label">Localisation</div>
+                        <div class="fact-value">Plouzané, Brest</div>
+                    </div>
+                    <div class="fact">
+                        <div class="fact-label">École</div>
+                        <div class="fact-value">ENIB — INP Bretagne</div>
+                    </div>
+                    <div class="fact">
+                        <div class="fact-label">Parcours</div>
+                        <div class="fact-value">FISEA · ITII Bretagne</div>
+                    </div>
+                    <div class="fact">
+                        <div class="fact-label">Recherche</div>
+                        <div class="fact-value">Alternance 2 ans</div>
+                    </div>
+                    <div class="fact">
+                        <div class="fact-label">Démarrage</div>
+                        <div class="fact-value">Septembre 2026</div>
+                    </div>
+                    <div class="fact">
+                        <div class="fact-label">Langues</div>
+                        <div class="fact-value">FR · AR · EN</div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         Section Compétences
+         ============================================ -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">02</span>
+                <h2 class="section-title">Compétences</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="skills-grid">
+
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"/>
+                            <polyline points="8 6 2 12 8 18"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Programmation</h3>
+                    <ul class="skill-list">
+                        <li>C / C++</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>SQL</li>
+                        <li><span class="skill-note">notions</span> Rust</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="4" y="4" width="16" height="16" rx="2"/>
+                            <rect x="9" y="9" width="6" height="6"/>
+                            <line x1="9" y1="2" x2="9" y2="4"/>
+                            <line x1="15" y1="2" x2="15" y2="4"/>
+                            <line x1="9" y1="20" x2="9" y2="22"/>
+                            <line x1="15" y1="20" x2="15" y2="22"/>
+                            <line x1="20" y1="9" x2="22" y2="9"/>
+                            <line x1="20" y1="14" x2="22" y2="14"/>
+                            <line x1="2" y1="9" x2="4" y2="9"/>
+                            <line x1="2" y1="14" x2="4" y2="14"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Systèmes embarqués</h3>
+                    <ul class="skill-list">
+                        <li>STM32</li>
+                        <li>UART · I2C · SPI · CAN</li>
+                        <li>ARM Cortex</li>
+                        <li>Machines à états</li>
+                        <li>Interruptions matérielles</li>
+                        <li><span class="skill-note">notions</span> RTOS</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="3 12 7 12 10 5 14 19 17 12 21 12"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Traitement du signal</h3>
+                    <ul class="skill-list">
+                        <li>Analyse spectrale (TF, TZ)</li>
+                        <li>Corrélation de signaux</li>
+                        <li>Modulation / démodulation</li>
+                        <li>Traitement numérique</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Outils & environnement</h3>
+                    <ul class="skill-list">
+                        <li>Git / GitLab · Linux</li>
+                        <li>MATLAB · Simulink</li>
+                        <li>LTspice · Proteus 8</li>
+                        <li>VHDL · LabVIEW</li>
+                        <li>Catia V5</li>
+                        <li>Debug embarqué</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         Section Formation
+         ============================================ -->
+    <section class="section" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">03</span>
+                <h2 class="section-title">Formation</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="timeline">
+
+                <article class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="marker-dot"></span>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Septembre 2025 — en cours</span>
+                        <h3 class="timeline-title">Diplôme d'ingénieur généraliste (FISEA)</h3>
+                        <p class="timeline-sub">ENIB — École Nationale d'Ingénieurs de Brest · INP Bretagne</p>
+                        <ul class="timeline-points">
+                            <li>Formation pluridisciplinaire orientée électronique, informatique et mécatronique</li>
+                            <li>Première année en statut étudiant, puis apprentissage (FISEA), en partenariat avec l'ITII Bretagne</li>
+                            <li>Admis au parcours FISEA à l'issue du premier semestre — 3<sup>e</sup> sur 11</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="marker-dot"></span>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023 — 2025</span>
+                        <h3 class="timeline-title">DUT Génie Électrique — Électronique et Informatique Industrielle</h3>
+                        <p class="timeline-sub">ESTC · Université Hassan II — Casablanca, Maroc</p>
+                        <ul class="timeline-points">
+                            <li>Électronique analogique &amp; numérique, systèmes automatisés, réseaux électriques</li>
+                            <li>Mention Bien</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="marker-dot"></span>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022 — 2023</span>
+                        <h3 class="timeline-title">Baccalauréat Scientifique — Physique-Chimie</h3>
+                        <p class="timeline-sub">Lycée qualifiant 30 Juillet — Maroc</p>
+                        <ul class="timeline-points">
+                            <li>Mention Bien</li>
+                        </ul>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         Section Expériences
+         ============================================ -->
+    <section class="section section-alt" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">04</span>
+                <h2 class="section-title">Expériences</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="experience-grid">
+
+                <article class="exp-card">
+                    <header class="exp-header">
+                        <div>
+                            <h3 class="exp-title">Stage technique — ONCF</h3>
+                            <p class="exp-company">Office National des Chemins de Fer · Casablanca</p>
+                        </div>
+                        <span class="exp-date">Avril — Juin 2025</span>
+                    </header>
+
+                    <h4 class="exp-subhead">Missions</h4>
+                    <ul class="exp-list">
+                        <li>Paramétrage et analyse de relais numériques SEPCOS dans des sous-stations 25 kV</li>
+                        <li>Exploitation de signaux pour l'identification de défauts en contexte quasi temps réel</li>
+                        <li>Mise en service d'équipements de protection</li>
+                        <li>Rédaction de fiches de réglage intégrant des contraintes de fiabilité et de latence</li>
+                    </ul>
+
+                    <h4 class="exp-subhead">Compétences acquises</h4>
+                    <p class="exp-text">
+                        Analyse de signaux en environnement industriel haute tension, lecture et
+                        paramétrage de protections numériques, rédaction de documentation technique
+                        normée.
+                    </p>
+
+                    <div class="exp-tags">
+                        <span>Relais numériques</span>
+                        <span>SEPCOS</span>
+                        <span>25 kV</span>
+                        <span>Analyse signaux</span>
+                    </div>
+                </article>
+
+                <article class="exp-card">
+                    <header class="exp-header">
+                        <div>
+                            <h3 class="exp-title">Stage d'initiation — ONEE</h3>
+                            <p class="exp-company">Office National de l'Électricité et de l'Eau Potable · Casablanca</p>
+                        </div>
+                        <span class="exp-date">Juillet — Août 2024</span>
+                    </header>
+
+                    <h4 class="exp-subhead">Missions</h4>
+                    <ul class="exp-list">
+                        <li>Diagnostic de pannes sur réseaux 20 kV via mesures terrain</li>
+                        <li>Analyse de signaux et de courbes de défaut</li>
+                        <li>Participation à la maintenance et à l'exploitation des données techniques</li>
+                    </ul>
+
+                    <h4 class="exp-subhead">Compétences acquises</h4>
+                    <p class="exp-text">
+                        Premier contact avec un environnement industriel : mesures terrain, lecture
+                        de courbes de défaut, suivi d'équipements électriques en exploitation.
+                    </p>
+
+                    <div class="exp-tags">
+                        <span>Réseaux 20 kV</span>
+                        <span>Mesures terrain</span>
+                        <span>Maintenance</span>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         Section Projets
+         ============================================ -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">05</span>
+                <h2 class="section-title">Projets</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Projet 1 : Station météo -->
+                <article class="project-card">
+                    <div class="project-status">
+                        <span class="status-dot pulse"></span>
+                        <span>En cours</span>
+                    </div>
+
+                    <div class="project-id">PRJ_01</div>
+
+                    <h3 class="project-title">Station météo embarquée — STM32</h3>
+
+                    <p class="project-desc">
+                        Conception d'un système embarqué autour d'un STM32F411 et d'un capteur
+                        environnemental BMP280, capable de mesurer pression, température et altitude
+                        avec une précision de ±0,5 °C. Les données sont transmises en UART à
+                        1 Hz et structurées via une architecture logicielle modulaire (acquisition,
+                        traitement, affichage).
+                    </p>
+
+                    <div class="project-block">
+                        <h4>Technologies</h4>
+                        <div class="project-tags">
+                            <span>STM32F411</span>
+                            <span>BMP280</span>
+                            <span>I2C</span>
+                            <span>UART</span>
+                            <span>C</span>
+                        </div>
+                    </div>
+
+                    <div class="project-block">
+                        <h4>Difficultés rencontrées</h4>
+                        <p>
+                            Mise en place de la communication I2C avec un capteur dont les registres
+                            de calibration nécessitent une compensation logicielle non triviale, et
+                            structuration du code pour rester lisible quand le projet grossit.
+                        </p>
+                    </div>
+
+                    <div class="project-block">
+                        <h4>Compétences développées</h4>
+                        <p>
+                            Lecture de datasheet, gestion de bus I2C, conception d'une architecture
+                            modulaire en C, transmission UART en temps réel, structuration du flux
+                            acquisition → traitement → affichage.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Projet 2 : Détection d'intrusion -->
+                <article class="project-card">
+                    <div class="project-status">
+                        <span>Terminé · 16/20</span>
+                    </div>
+
+                    <div class="project-id">PRJ_02</div>
+
+                    <h3 class="project-title">Système de détection d'intrusion — PIR + GSM</h3>
+
+                    <p class="project-desc">
+                        Système embarqué complet basé sur la chaîne PIR → microcontrôleur → buzzer,
+                        LCD et module GSM, avec un temps de réponse mesuré inférieur à 3 secondes.
+                        Implémentation en C avec interruptions matérielles et machine à états pour
+                        garantir un comportement réactif en contraintes temps réel.
+                        Projet présenté en évaluation finale.
+                    </p>
+
+                    <div class="project-block">
+                        <h4>Technologies</h4>
+                        <div class="project-tags">
+                            <span>Microcontrôleur</span>
+                            <span>Capteur PIR</span>
+                            <span>Module GSM</span>
+                            <span>LCD</span>
+                            <span>C</span>
+                            <span>Interruptions</span>
+                        </div>
+                    </div>
+
+                    <div class="project-block">
+                        <h4>Difficultés rencontrées</h4>
+                        <p>
+                            Gérer proprement les transitions de la machine à états sans bloquer la
+                            boucle principale, et fiabiliser le déclenchement du GSM tout en
+                            respectant la contrainte de réponse &lt; 3 s.
+                        </p>
+                    </div>
+
+                    <div class="project-block">
+                        <h4>Compétences développées</h4>
+                        <p>
+                            Conception d'une machine à états en C, utilisation des interruptions
+                            matérielles, intégration multi-périphériques, vérification de
+                            contraintes temps réel sur cible.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Projet 3 : Travaux académiques -->
+                <article class="project-card">
+                    <div class="project-status">
+                        <span>2024 — 2026</span>
+                    </div>
+
+                    <div class="project-id">PRJ_03</div>
+
+                    <h3 class="project-title">Projets académiques — Signal, FPGA &amp; bases de données</h3>
+
+                    <p class="project-desc">
+                        Ensemble de travaux pratiques et de projets menés en parallèle du cursus,
+                        couvrant l'électronique, les systèmes embarqués et le traitement du signal :
+                        programmation en C, C++, Python et Java, conception de bases de données SQL,
+                        analyse de signaux analogiques et numériques, modulation / démodulation,
+                        manipulation de microcontrôleurs et microprocesseurs, ainsi que conception
+                        en VHDL sur FPGA.
+                    </p>
+
+                    <div class="project-block">
+                        <h4>Technologies</h4>
+                        <div class="project-tags">
+                            <span>C / C++</span>
+                            <span>Python</span>
+                            <span>Java</span>
+                            <span>SQL</span>
+                            <span>VHDL</span>
+                            <span>FPGA</span>
+                            <span>MATLAB</span>
+                        </div>
+                    </div>
+
+                    <div class="project-block">
+                        <h4>Difficultés rencontrées</h4>
+                        <p>
+                            Passer rapidement d'un environnement à l'autre (logiciel haut niveau,
+                            description matérielle VHDL, simulation MATLAB) sans perdre de cohérence
+                            méthodologique entre les projets.
+                        </p>
+                    </div>
+
+                    <div class="project-block">
+                        <h4>Compétences développées</h4>
+                        <p>
+                            Pratique régulière du débogage, de la simulation, et capacité à passer
+                            d'une abstraction logicielle à une description matérielle. Polyvalence
+                            entre langages et outils utilisés en ingénierie électrique.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         Section Centres d'intérêt
+         ============================================ -->
+    <section class="section section-alt" id="interests">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">06</span>
+                <h2 class="section-title">Centres d'intérêt</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="interests-grid">
+
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"/>
+                        </svg>
+                    </div>
+                    <h3>Football</h3>
+                    <p>Sport collectif que je pratique depuis l'enfance — ça m'a appris la communication, l'esprit d'équipe et la gestion du temps.</p>
+                </div>
+
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+                            <line x1="3" y1="6" x2="21" y2="6"/>
+                            <path d="M16 10a4 4 0 0 1-8 0"/>
+                        </svg>
+                    </div>
+                    <h3>Sport &amp; activité physique</h3>
+                    <p>Pratique régulière, en dehors du football. C'est mon équilibre par rapport au temps passé sur les projets techniques.</p>
+                </div>
+
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 20h9"/>
+                            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+                        </svg>
+                    </div>
+                    <h3>Veille technologique</h3>
+                    <p>Lecture autour des microcontrôleurs, du temps réel et des innovations industrielles — c'est ce qui me donne des idées de projets perso.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         Section Contact
+         ============================================ -->
+    <section class="section section-contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">07</span>
+                <h2 class="section-title">Contact</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-intro">
+                    <h3>Ouvert aux échanges</h3>
+                    <p>
+                        Je suis disponible pour discuter d'un contrat d'apprentissage à partir
+                        de septembre 2026, ou simplement pour échanger autour d'un projet
+                        embarqué. La réponse est généralement rapide.
+                    </p>
+                </div>
+
+                <div class="contact-cards">
+
+                    <a href="mailto:yahyaazzabi11@gmail.com" class="contact-card">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value">yahyaazzabi11@gmail.com</span>
+                        </div>
+                    </a>
+
+                    <a href="tel:+33635041980" class="contact-card">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">Téléphone</span>
+                            <span class="contact-value">+33 6 35 04 19 80</span>
+                        </div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/yahya-azzabi" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">LinkedIn</span>
+                            <span class="contact-value">yahya-azzabi</span>
+                        </div>
+                    </a>
+
+                    <div class="contact-card contact-card-static">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">Localisation</span>
+                            <span class="contact-value">Plouzané · 29280</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         Footer
+         ============================================ -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="footer-text">
+                © 2026 Yahya AZZABI — Portfolio · Brest, France
+            </p>
+            <p class="footer-meta">
+                Construit en HTML, CSS et JavaScript vanilla.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bouton retour en haut -->
+    <button class="back-to-top" id="back-to-top" aria-label="Retour en haut">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="19" x2="12" y2="5"/>
+            <polyline points="5 12 12 5 19 12"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
